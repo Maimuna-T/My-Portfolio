@@ -1,0 +1,123 @@
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    margin:80px 170px ;
+    padding: 0 40px 80px 40px;
+    max-width: 1400px;
+    position: relative;  
+    z-index: 1;
+}
+
+.title{
+    position:relative;
+}
+
+.title h1{
+    padding: 0px 30px;
+    font-size:55px ;
+    font-weight: 600;
+}
+
+
+.skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:25px;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.skills-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 30px;
+    border-radius:10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.skills-format h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.skills-format h2{
+    font-size: 28px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #67c7e4 50%, rgb(8, 115, 123) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent ;
+}
+
+.skills-format p{
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 300px;
+}
+
+.skills-readmore{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: top;
+}
+
+.skills-format:hover{
+    border: 2px solid rgb(0, 179, 255);
+    background-image: linear-gradient(270deg, #192d32 50%, rgb(7, 104, 111) 100%);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 840px) {
+    .skills {
+        margin: 60px auto;
+        padding: 0 30px 60px 30px;
+    }
+
+    .title h1 {
+        font-size: 50px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .skills-format {
+        padding: 30px;
+    }
+
+    .skills-format h2 {
+        font-size: 28px;
+    }
+
+    .skills-format p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title h1 {
+        font-size: 36px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-format h2 {
+        font-size: 22px;
+    }
+}
+

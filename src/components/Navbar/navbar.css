@@ -1,0 +1,63 @@
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #1a1a1a;
+
+
+}
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+}
+.desktopMenulist{
+    margin: 1rem;
+    cursor: pointer;
+}
+.desktopMenulist:hover{
+    color: rgb(69, 187, 220);
+    padding-bottom: 0.05em; ;
+    border-bottom: 3px solid rgb(50, 205, 205);
+
+}
+.desktopMenubtn{
+    background: white;
+    color:black ;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+
+}
+.navbar-contact-img {
+    width: 1rem;  
+    height: 1rem;
+}
+.desktopMenuImg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;;
+}
+@media screen and (max-width: 840px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .desktopMenu {
+        display: none;
+    }
+    .desktopMenubtn {
+        display: none;
+    }
+}

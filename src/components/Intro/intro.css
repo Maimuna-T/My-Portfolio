@@ -1,0 +1,144 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left; 
+}
+.bg{
+    position: absolute;
+    z-index: -1;
+    top: -4rem;
+    right: 0;
+    object-fit: cover;
+    height: 100vh;
+}
+.introContent{
+    height: 100vh;
+    width: 100vh;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding-top: 8rem;
+}
+.hello {
+  display: inline-block;
+  animation: wordDrop 0.8s ease-out forwards;
+}
+
+@keyframes wordDrop {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.introText{
+    color: rgb(130, 171, 220);
+    font-size: 2rem;
+
+}
+.introPara{
+    font-size: medium;
+    font-weight: 100;
+    margin-bottom: 2rem;
+
+
+}
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+.intro-btn-projects {
+    display: inline-block;
+    padding: 1rem 1rem;
+    background-color: rgb(150, 203, 218);
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border: none;
+    color: black;
+}
+
+.intro-btn-projects:hover {
+    background-color: #69b9de;
+}
+
+.intro-btn-contact{
+  display: inline-block;
+  padding: 1rem 1rem; 
+  background-color: rgb(73, 143, 167); 
+  border-radius: 0.5rem; 
+  font-weight: 500; 
+  transition: all 0.3s ease;
+  margin-right: 1rem; 
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  line-height: 30px;
+}
+.intro-btn-contact:hover {
+  background-color: #63a7c9; 
+}
+
+@media screen and (max-width:840px){
+    .bg{
+        right: -10vw;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+    
+}
+@media screen and (max-width:480px){
+    .bg{
+        right: -20vw;
+    }
+    .introContent{
+        font-size: 5vw;
+    }
+    .hello{
+        font-size: 2.5vw;
+    }
+    
+}
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  animation: typing 2s steps(12) 0.6s forwards, blink 0.75s step-end infinite;
+  width: 0;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}

@@ -1,0 +1,219 @@
+.about {
+    width: 100%;
+    max-width: 1400px;
+    min-height: calc(100vh - 4rem);
+    margin: 0 auto;
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.about-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-title h1 {
+    margin: 0;
+    font-size: 55px;
+    font-weight: 600;
+    color: white;
+}
+
+.about-title h1 span {
+    color: rgb(130, 171, 220);
+}
+
+.about-title p {
+    margin-top: 10px;
+    color: #bdbdbd;
+    font-size: 16px;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about-card {
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.4s ease;
+}
+
+.about-who {
+    padding: 40px;
+}
+
+.about-card h2,
+.interests-section > h2 {
+    margin: 0 0 18px;
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(
+        270deg,
+        #67c7e4 50%,
+        rgb(8, 115, 123) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-who p {
+    margin: 10px 0;
+    color: white;
+    font-size: 17px;
+    line-height: 29px;
+}
+
+.about-card:hover {
+    border-color: rgb(0, 179, 255);
+    background-image: linear-gradient(
+        270deg,
+        #192d32 50%,
+        rgb(7, 104, 111) 100%
+    );
+    transform: translateY(-4px);
+}
+
+.education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-item h3 {
+    margin: 0 0 6px;
+    color: white;
+    font-size: 18px;
+}
+
+.education-item p {
+    margin: 0;
+    color: #bdbdbd;
+    font-size: 15px;
+}
+
+.education-item span {
+    color: rgb(130, 171, 220);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.interests-section {
+    width: 100%;
+}
+
+.interests-section > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.interests-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.interest-card {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.3s ease;
+}
+
+.interest-card h3 {
+    margin: 0 0 8px;
+    color: rgb(130, 171, 220);
+    font-size: 18px;
+}
+
+.interest-card p {
+    margin: 0;
+    color: #d0d0d0;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.interest-card:hover {
+    border-color: rgb(0, 179, 255);
+    background: linear-gradient(
+        270deg,
+        #192d32 50%,
+        rgb(7, 104, 111) 100%
+    );
+    transform: translateY(-4px);
+}
+
+@media screen and (max-width: 840px) {
+
+    .about {
+        padding: 60px 30px;
+    }
+
+    .about-title h1 {
+        font-size: 45px;
+    }
+
+    .interests-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-who {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .about {
+        padding: 50px 20px;
+    }
+
+    .about-title h1 {
+        font-size: 36px;
+    }
+
+    .about-title p {
+        font-size: 14px;
+    }
+
+    .about-who {
+        padding: 22px;
+    }
+
+    .about-card h2,
+    .interests-section > h2 {
+        font-size: 23px;
+    }
+
+    .about-who p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .education-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .interests-container {
+        grid-template-columns: 1fr;
+    }
+}
